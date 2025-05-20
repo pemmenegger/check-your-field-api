@@ -9,7 +9,7 @@ const privateKey = {
   type: "service_account",
   project_id: "checkyourfield",
   private_key_id: "6ccd8837cef9af9ed0ffe74360a90f090dc92856",
-  private_key: process.env.EE_PRIVATE_KEY,
+  private_key: process.env.EE_PRIVATE_KEY.replace(/\\n/g, "\n"),
   client_email: "checkyourfield@checkyourfield.iam.gserviceaccount.com",
   client_id: "100252327762775213603",
   auth_uri: "https://accounts.google.com/o/oauth2/auth",
